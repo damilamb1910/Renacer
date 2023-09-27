@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,15 @@
     <link rel="stylesheet" href="https://use.typekit.net/nyj8tdn.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Quicksand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo de Renacer"></a>
+        <a href="../index.html"><img class="logo" title="Inicio" src="../images/logo.png" alt="logo de Renacer"></a>
         <nav>
             <ul>
                 <li><a href="../pages/desarrollo.html">Reiki</a></li>
@@ -22,5 +25,55 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="contacto__inicio">
+            <h3>Contacto</h3>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" id="mensaje" name="mensaje" required>
+                <p>¿Cómo nos encontraste?</p>
+                <label><input type="radio" name="encontrado" value="Internet">Internet</label>
+                <label><input type="radio" name="encontrado" value="Recomendación">Recomendación</label>
+                <label><input type="radio" name="encontrado" value="Redes Sociales">Redes Sociales</label>
+                <p>¿Qué servicios te interesan?</p>
+                <label><input type="checkbox" name="servicios[]" value="Yoga">Yoga</label>
+                <label><input type="checkbox" name="servicios[]" value="Reiki">Reiki</label>
+                <label><input type="checkbox" name="servicios[]" value="Meditación">Meditación</label>
+                <label for="disciplinas">Franja horaria en que desea que le contactemos:</label>
+                <select name="disciplina" id="disciplina">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="1">8:00 a 10:00</option>
+                    <option value="2">10:00 a 12:00</option>
+                    <option value="3">12:00 a 14:00</option>
+                    <option value="4">14:00 a 16:00</option>
+                    <option value="5">16:00 a 18:00</option>
+                    <option value="6">18:00 a 20:00</option>
+                    <option value="7">20:00 a 22:00</option>
+                </select>
+                <label for="comentario">Comentarios:</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+                <input class="submit" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h4>Estamos cerca...</h4>
+        <div class="redes__container">
+            <a href="https://www.facebook.com/damian.lamberti.9" target="_blank"><img class="img__redes"
+                    src="../images/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/damianlamberti/" target="_blank"><img class="img__redes"
+                    src="../images/instagram.png" alt="instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=1136684089&text=¡Hola!%20Quisiera%20más%20info%20sobre%20Reiki-Yoga"
+                target="_blank"><img class="img__redes" src="../images/whatsapp.png" alt="whatsapp"></a>
+        </div>
+        <h6>©Damian Lamberti comisión:10</h6>
+    </footer>
 </body>
+
 </html>

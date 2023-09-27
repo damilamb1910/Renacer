@@ -240,3 +240,97 @@ details[open]{
     background-color: #69C1AC;
     padding: 10px;
 }
+.contacto__inicio{
+    display: flex;
+    flex-direction: column;
+    height: 50vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif; 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #D1D1D1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.submit{
+    background-color: #69C1AC ;
+    
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.5s ease-in;
+}
+.submit:hover{
+    background-color:#706d6d ;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif; 
+    height: 40vw;
+    padding-top: 200px;
+    background-image: url(../images/back-test.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card__container{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    height: 28vw;
+    overflow-y: scroll;
+    margin-top: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: #F5E39D;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.card img{
+    width: 100px;
+    border-radius: 100px;
+    border: solid 5px #A88B78 ;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #A88B78;
+    -webkit-scrollbar-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #69C1AC;
+}
+.float__button{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+.float__button__img{
+    width: 70px;
+    transition: all ease-in 0.5s;
+} 
+.float__button__img:hover{
+    transform: scale(1.2);
+    transition: all ease-in 0.5s;
+}
+
+
